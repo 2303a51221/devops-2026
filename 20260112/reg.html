@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration</title>
+</head>
+<body>
+  <h1>Student Registration</h1>
+
+  <form action="/submit" method="post">
+    <fieldset>
+      <legend>Student Details</legend>
+      <label for="student-id">Student ID:</label>
+      <input id="student-id" name="studentId" type="text" required>
+
+      <br>
+
+      <label for="first-name">First Name:</label>
+      <input id="first-name" name="firstName" type="text" required>
+
+      <br>
+
+      <label for="last-name">Last Name:</label>
+      <input id="last-name" name="lastName" type="text" required>
+
+      <br>
+
+      <label for="dob">Date of Birth:</label>
+      <input id="dob" name="dob" type="date" required>
+
+      <br>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="nonbinary">Non-binary</option>
+        <option value="prefer-not">Prefer not to say</option>
+      </select>
+
+      <br>
+
+      <label for="email">Email:</label>
+      <input id="email" name="email" type="email" required>
+
+      <br>
+
+      <label for="phone">Phone:</label>
+      <input id="phone" name="phone" type="tel" pattern="[0-9+\-\s]{7,15}" required>
+
+      <br>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Academic Info</legend>
+      <label for="program">Program:</label>
+      <input id="program" name="program" type="text" required>
+
+      <br>
+
+      <label for="department">Department:</label>
+      <input id="department" name="department" type="text" required>
+
+      <br>
+
+      <label for="year">Year:</label>
+      <select id="year" name="year" required>
+        <option value="">Select</option>
+        <option value="1">1st</option>
+        <option value="2">2nd</option>
+        <option value="3">3rd</option>
+        <option value="4">4th</option>
+      </select>
+
+      <br>
+
+      <label for="semester">Semester:</label>
+      <input id="semester" name="semester" type="number" min="1" max="12" required>
+
+      <br>
+
+      <label for="enrollment-date">Enrollment Date:</label>
+      <input id="enrollment-date" name="enrollmentDate" type="date" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Guardian / Emergency Contact</legend>
+      <label for="guardian-name">Guardian Name:</label>
+      <input id="guardian-name" name="guardianName" type="text" required>
+
+      <br>
+
+      <label for="guardian-phone">Guardian Phone:</label>
+      <input id="guardian-phone" name="guardianPhone" type="tel" pattern="[0-9+\-\s]{7,15}" required>
+
+      <br>
+
+      <label for="guardian-email">Guardian Email:</label>
+      <input id="guardian-email" name="guardianEmail" type="email">
+
+      <br>
+
+      <label for="emergency-relation">Relationship:</label>
+      <input id="emergency-relation" name="emergencyRelation" type="text" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional Information</legend>
+      <label>Documents Submitted:</label>
+      <br>
+      <label><input type="checkbox" name="docs" value="id-card"> ID Card</label>
+      <label><input type="checkbox" name="docs" value="transcript"> Transcript</label>
+      <label><input type="checkbox" name="docs" value="photo"> Passport Photo</label>
+      <label><input type="checkbox" name="docs" value="residence"> Proof of Residence</label>
+
+      <br><br>
+
+      <label for="notes">Notes:</label>
+      <textarea id="notes" name="notes" rows="3" placeholder="Any special requirements or comments"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Consent</legend>
+      <label>
+        <input type="checkbox" name="consent" value="data" required>
+        I confirm the above information is accurate and I consent to its use for enrollment.
+      </label>
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Submit Registration</button>
+    <button type="reset">Reset Form</button>
+  </form>
+</body>
+</html>

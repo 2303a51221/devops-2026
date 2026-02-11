@@ -1,0 +1,74 @@
+.courses-section {
+    margin-bottom: 2rem;
+}
+
+.courses-section h2 {
+    font-size: 1.8rem;
+    color: #1a1a2e;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.course-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.level-badge {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.level-badge.beginner {
+    background: #d4edda;
+    color: #155724;
+}
+
+.level-badge.intermediate {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.level-badge.advanced {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.course-card h3 {
+    font-size: 1.3rem;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+
+.course-card p {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.course-meta {
+    color: #667eea;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
